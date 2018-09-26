@@ -7,7 +7,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   background-image: url("../images/gravel.png");
-  line-height: 2;
+  font-size: x-large;
+  line-height: 100%;
 }
 
 * {
@@ -15,30 +16,23 @@ body {
   padding: 0;
 }
 
-
 h2{
+  font-size: x-large;
   font-weight: bold;
-  font-size: 24px;
 }
 
 nav {
-  flex-direction: row;
-  position: fixed;
+  position: static;
   z-index: 1100;
   border-bottom: solid #ccc;
-  width: 100%;
-  height: 10vh;
-  background-color: #ffffff;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  
+ 
 }
 
 nav a{
   font-family: Arial, Helvetica, sans-serif;
   color: gray;
-  padding: 0% 2% 0 2%;
   text-decoration: none;
-  background-color: white;  
+  background-color: none;  
 }
 
 nav a:hover{
@@ -52,16 +46,14 @@ header {
 
 
 p {
-  margin-top: 1vh;
+  margin: 1vh;
 }
 
 footer {
-  display: flex;
   position: fixed;
-  bottom:0;
+  bottom: 0px;
   width: 100%;
   height: 8vh;
-  justify-content: center;
   border-top: solid thick #4aaaa5;
   background-color: #666;
   overflow: hidden;
@@ -71,7 +63,8 @@ footer {
 footer p{
   text-align: center;
   position: absolute;
-  bottom: 0;
+  bottom: 40%;
+  right: 40%;
   color: white;
   font-size: x-small;
 
@@ -96,20 +89,31 @@ img {
   margin-right: 1vw;
 }
 
+#myImage{
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+
 #logo {
+  font-size: x-large;
+  font-weight: bold;
+  padding: 5%;  
   color: white;
   background-color: #4aaaa5;
  
 }
 
 #header-links {
-  text-align: center;
-  width:auto;
   background-color: white;
+  padding: 4% 2%;
   
 }
-#header-links a{  
-  padding: 0vh 2vw;
+#header-links a{ 
+  font-size: medium;
+  margin: 0 auto;
+  padding: 0% 2%;
+  
 }
 
 #header-links :nth-child(2) {
@@ -122,25 +126,24 @@ img {
   color: black;
   background: #fff;
   height: auto;
-  width: 66vw;
-  
+  width: 88vw;
   margin: 0 auto;
-  margin-top: 15vh;
-  margin-bottom: 10vh;
-  padding: 2%;
+  margin-top: 1vh;
+  padding: 4%;
   border: solid #ddd;
   flex: 1 0 auto;
+  border-radius: 7px;
 }
 
 #section header h2 {
   text-align: left;
   color: #4aaaa5;
-  padding-bottom: 2%;
+  padding: 5% 0%;
   border-bottom: solid lightgray;
 }
 
 #section section {
-  margin-top: 1vh;
+  margin-top: 4vh;
 }
 
 #contact-form {
@@ -152,6 +155,7 @@ img {
 
 #message{
   height: 10vh;
+  max-length: 255;
 }
 
 #submit {
