@@ -195,13 +195,16 @@ input{
   background-color: #4aaaa5;
 }
 
-.portfolio_images:hover {
-  box-shadow: 10px 10px 8px teal;
-}
+
 
 .portfolio_images img {
   height: auto;
   width: 100%;
+}
+
+.portfolio_images img:hover{
+  
+  box-shadow: 10px 10px 8px teal;
 }
 
 @media screen and (min-width: 768px) {
@@ -596,9 +599,7 @@ nav {
     background-color: #4aaaa5;
   }
 
-  .portfolio_images:hover {
-    box-shadow: 10px 10px 8px teal;
-  }
+ 
 
   .portfolio_images img {
     height: auto;
